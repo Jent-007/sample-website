@@ -1,0 +1,1 @@
+This is a sample website as part of my personal project to improve my html and css proficiency.
