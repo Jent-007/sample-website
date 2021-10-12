@@ -5,41 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h3>Cafe Pedro</h3>
-        <ul>
-            <li>About</li>
-            <li>Food & Drinks</li>
-            <li>Contact</li>
-        </ul>
-    </header>
+    <div class="header">
+        <div>
+            <img src="data:image/png;base64,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"></div>
+        <div>   
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Food & Drinks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </div>
 
-    <main>
+    <div class="main">
         <div class="welcome">
-            <h1>Welcome to Cafe Pedro</h1>h1>
+            <h1>Welcome to Café Pedro</h1>
             <p>"Another day, another cup of coffee."</p>
         </div>
-        
         <div id="about">
-            <p>
-                Insert brief story about Cafe Pedro here.
-            </p>
+            <p>Insert brief story about Cafe Pedro here.</p>
         </div>
-
         <div id="menu">
-            <div>Food</div>
-                <div>Pasta</div>
-                <div>Sandwich</div>
-                <div>Rice Meals</div>
-                <div>Appetizers</div>
-            <div>Drinks</div>
-                <div>Shakes</div>
-                <div>Juice</div>
-                <div>Coffee</div>
+            <div class="food">Food
+                <div class="food-list">
+                    <div class="food-type">Pasta</div>
+                    <div class="food-type">Sandwich</div>
+                    <div class="food-type">Rice Meals</div>
+                    <div class="food-type">Appetizers</div>
+                </div>
+            </div>
+            <div class="drink">Drinks
+                <div class="drink-list">
+                    <div class="drink-type">Shakes</div>
+                    <div class="drink-type">Juice</div>
+                    <div class="drink-type">Hot Coffee</div>
+                    <div class="drink-type">Cold Coffee</div>
+                </div>
+            </div>
         </div>
-
         <div id="contact">
             <div>Check if we're open
                 <ul>
@@ -48,7 +54,7 @@
                 </ul>
             </div>
             <div>Contact us
-                <div>Address: San Pdero St., Santo Domingo, Albay, Bico;, Philippines, 4508</div>
+                <div>Address: San Pedro St., Santo Domingo, Albay, Bicol, Philippines, 4508</div>
                 <div>Phone No.: +63900 000 0000</div>
                 <div>Follow us in our socials!
                     <div>Facebook</div>
@@ -56,6 +62,6 @@
             </div>
 
         </div>
-    </main>
+    </div>
 </body>
 </html>

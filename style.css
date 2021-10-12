@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/dancingscript/v16/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhLw.woff2') format('woff2');}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+a:hover {
+    font-weight: bold;
+    color: beige;
+}
+
+img {
+    height: 75px;
+    width: 75x;
+}
+
+/*.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+*/
+.welcome {
+    text-align: center;
+    line-height: 50%;
+    height: 86vh;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcome::before {
+    content: "";
+    background-image: url('https://lh3.googleusercontent.com/MB9-lqGTfKtGVNek0wE3ugqZ4b3-qT1lO46aKBGM0tL9ZJJo1E_qRYsMU6tKAH2RxB8cexxkKF8eFLBkiQ=w1080-h608-p-no-v0');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 75%;
+    filter: brightness(55%);
+    z-index: -1;
+}
+
+.welcome h1 {
+    font-size: 85px;
+}
+
+.welcome p {
+    font-size: 40px;
+    padding-bottom: 125px;
+}
+
+#about {
+    background:linear-gradient(35deg, #FFECD2, #FCB69F);
+    height: 50vh;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.food-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.food-type {
+    padding: 10px;
+}
+
+.drink {
+    display: flex;
+    flex-direction: column;
+}
+
+.drink-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.drink-type {
+    padding: 10px;
+}
